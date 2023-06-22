@@ -43,6 +43,12 @@
 
                 </ul>
             </div>
+            <br>
+            <!--<div class="d-print-none"><a class="btn btn-outline-light btn-sm shadow-sm mt-1 me-2" href="assets/CV.pdf" data-aos="fade-right" 
+                data-aos-delay="700">Download CV</a>
+            </div>-->
+            <button onclick="downloadCV()" class="btn btn-outline-light btn-sm shadow-sm mt-1 me-2" id="downloadBtn">Download CV</button>
+            
         </div>
     </nav>
     <!-- //NAVBAR -->
@@ -427,6 +433,18 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <!--DownloadCV-->
+    <script>
+        function downloadCV() {
+            var link = document.createElement("a");
+            link.download = "CV.pdf";
+            link.href = "assets/CV.pdf";
+            link.click();
+        }
+    </script>
+    <!--//DownloadCV-->
+
 </body>
 
 </html>
